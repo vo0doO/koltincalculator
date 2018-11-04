@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "277485433091",
-    "firebase_url": "https://firemessage-db177.firebaseio.com",
-    "project_id": "firemessage-db177",
-    "storage_bucket": "firemessage-db177.appspot.com"
+    "project_number": "640608698274",
+    "firebase_url": "https://calculator-23b23.firebaseio.com",
+    "project_id": "calculator-23b23",
+    "storage_bucket": "calculator-23b23.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:277485433091:android:ba89bfa487b92988",
+        "mobilesdk_app_id": "1:640608698274:android:ba89bfa487b92988",
         "android_client_info": {
           "package_name": "com.resocoder.firemessage"
         }
       },
       "oauth_client": [
         {
-          "client_id": "277485433091-ijnbcps9nv94spj9p1sk153774rt4432.apps.googleusercontent.com",
+          "client_id": "640608698274-atc0ca0hst0hq257tv7l1tugd6eikd89.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBx9HueAK6SYyaxXDKULgpecQJuMFTNivM"
+          "current_key": "AIzaSyCsPq92SEjwCcXx-eZW5inJe0hUzYquMPg"
         }
       ],
       "services": {
