@@ -1,7 +1,7 @@
 package com.resocoder.firemessage
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import org.jetbrains.anko.startActivity
 

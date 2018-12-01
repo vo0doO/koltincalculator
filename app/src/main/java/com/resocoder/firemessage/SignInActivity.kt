@@ -2,8 +2,8 @@ package com.resocoder.firemessage
 
 import android.app.Activity
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.auth.ErrorCodes
 import com.firebase.ui.auth.IdpResponse
@@ -23,7 +23,7 @@ class SignInActivity : AppCompatActivity() {
 
     private val signInProviders =
             listOf(AuthUI.IdpConfig.EmailBuilder()
-                    .setAllowNewAccounts(true)
+                    .setAllowNewAccounts(false)
                     .setRequireName(true)
                     .build())
 
@@ -35,6 +35,7 @@ class SignInActivity : AppCompatActivity() {
             val intent = AuthUI.getInstance().createSignInIntentBuilder()
                     .setAvailableProviders(signInProviders)
                     .setLogo(R.drawable.ic_fire_emoji)
+                    .setIsSmartLockEnabled(false)
                     .build()
             startActivityForResult(intent, RC_SIGN_IN)
         }
@@ -47,7 +48,7 @@ class SignInActivity : AppCompatActivity() {
             val response = IdpResponse.fromResultIntent(data)
 
             if (resultCode == Activity.RESULT_OK) {
-                val progressDialog = indeterminateProgressDialog("Setting up your account")
+                val progressDialog = indeterminateProgressDialog("Настройка твоего аккаунта")
                 FirestoreUtil.initCurrentUserIfFirstTime {
                     startActivity(intentFor<MainActivity>().newTask().clearTask())
 
